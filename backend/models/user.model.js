@@ -10,7 +10,7 @@ const userSchema = new Schema({
         trim: true,
         minlength: 3
     },
-    timestamps: true,
+    time : { type : Date, default: Date.now },
 });
 
 const User = mongoose.model('User', userSchema);
